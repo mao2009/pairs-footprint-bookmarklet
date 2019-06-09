@@ -8,7 +8,7 @@ const bookmarklet_for_pc = (()=>{
             elem[0].click();
         }
     },interval);
-}).toString().replace(/\s+/g," ").replace("\n","");
+}).replace(/\s+/g," ").replace("\n","");
 
 const bookmarklet_for_sp = (()=>{
     const interval = 1000;
@@ -22,5 +22,5 @@ const bookmarklet_for_sp = (()=>{
     },interval);
 }).toString().replace(/\s+/g," ").replace("\n","");
 
-document.getElementById("bookmarklet_for_pc").href = `javascript:(${bookmarklet_for_pc})()`;
-document.getElementById("bookmarklet_for_sp").href = `javascript:(${bookmarklet_for_sp})()`;
+document.getElementById("bookmarklet_for_pc").href = `javascrpt:${bookmarklet_for_pc}`;
+document.getElementById("bookmarklet_for_sp").href = `javascrpt:(${bookmarklet_for_sp})()`;
