@@ -1,4 +1,4 @@
-const bookmarklet = (()=>{
+const bookmarklet_for_pc = (()=>{
     const interval = 1000;
     const ID = setInterval(() => {
         const elem = document.getElementsByClassName("action_pager_next")[0].getElementsByTagName("a");
@@ -10,4 +10,4 @@ const bookmarklet = (()=>{
     },interval);
 }).toString().replace(/\s+/g," ").replace("\n","");
 
-document.getElementById("bookmarklet_for_pc").href = `javascrpt:(${bookmarklet})()`;
+document.getElementById("bookmarklet_for_pc").href = `javascrpt:(${bookmarklet_for_pc})()`;
