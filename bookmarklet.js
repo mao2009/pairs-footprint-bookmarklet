@@ -1,4 +1,4 @@
-const bookmarklet_for_pc = (()=>{
+const bookmarklet_for_pc = `
     const interval = 1000;
     const ID = setInterval(() => {
         const elem = document.getElementsByClassName("action_pager_next")[0].getElementsByTagName("a");
@@ -7,8 +7,7 @@ const bookmarklet_for_pc = (()=>{
         }else{
             elem[0].click();
         }
-    },interval);
-}).toString().replace(/\s+/g," ").replace("\n","");
+    },interval);`
 
 const bookmarklet_for_sp = (()=>{
     const interval = 1000;
@@ -22,5 +21,5 @@ const bookmarklet_for_sp = (()=>{
     },interval);
 }).toString().replace(/\s+/g," ").replace("\n","");
 
-document.getElementById("bookmarklet_for_pc").href = `javascrpt:(${bookmarklet_for_pc})()`;
+document.getElementById("bookmarklet_for_pc").href = `javascrpt:${bookmarklet_for_pc}`;
 document.getElementById("bookmarklet_for_sp").href = `javascrpt:(${bookmarklet_for_sp})()`;
