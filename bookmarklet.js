@@ -1,4 +1,4 @@
-const bookmarklet_for_pc = `
+const bookmarklet_for_pc = (`
     const interval = 1000;
     const ID = setInterval(() => {
         const elem = document.getElementsByClassName("action_pager_next")[0].getElementsByTagName("a");
@@ -7,7 +7,7 @@ const bookmarklet_for_pc = `
         }else{
             elem[0].click();
         }
-    },interval);`
+    },interval);`).replace(/\s+/g," ").replace("\n","");
 
 const bookmarklet_for_sp = (()=>{
     const interval = 1000;
