@@ -10,4 +10,4 @@ const bookmarklet = (()=>{
     },interval);
 }).toString().replace(/\s+/g," ").replace("\n","");
 
-document.getElementById("bookmarklet").href = `javascrpt:(${bookmarklet})()`;
+document.getElementById("bookmarklet_for_pc").href = `javascrpt:(${bookmarklet})()`;
