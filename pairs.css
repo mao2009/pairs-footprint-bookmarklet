@@ -3,14 +3,9 @@ header{
     text-align: center;
     padding: 32px 0;
 }
-
 header h1{
     color: white;
     text-align: center;
-}
-
-.bookmarklet_wrapper{
-    margin: 0 32px;
 }
 
 footer{
