@@ -12,3 +12,7 @@ header h1{
 .bookmarklet_wrapper{
     margin: 0 32px;
 }
+
+footer{
+    height: 100px;
+}
