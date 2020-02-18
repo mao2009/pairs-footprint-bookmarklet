@@ -13,7 +13,7 @@ const bookmarklet_for_pc = (()=>{
 const bookmarklet_for_sp = (()=>{
     const interval = 1000;
     const ID = setInterval(() => {
-        const elem = document.getElementsByClassName("next_button_wrap");
+        const elem = document.getElementsByClassName("next__4uUiD");
         if(elem === undefined){
             clearInterval(ID);
         }else{
